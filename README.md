@@ -1,5 +1,5 @@
 # EXCEPT
-Except is a Python tool that makes penetration testing easy, with Except you can run different modules such as the network scanner, md5 cracker and more to save time in the field. Except has been testing with Python 2.7 and is stable, for installation instructions please see the install section.
+Except is a Python tool that makes penetration testing easy, with Except you can find different tools which are very useful when pent testing. Except has been testing with Python 2.7 and is stable, for installation instructions please see the install section.
 
 ## Installation
 
