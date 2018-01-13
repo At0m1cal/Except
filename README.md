@@ -14,6 +14,3 @@ cd except-master/
 pip install -r requirements.txt --no-index
 
 python except.py
-
-------------------------------------
-
