@@ -7,3 +7,7 @@ Except is a Python tool that makes penetration testing easy, with Except you can
  2. cd Except
  3. pip install -r requirements.txt
  4. python except.py
+
+## Contact
+
+Email: at0m1calsof0war3@gmail.com
