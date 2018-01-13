@@ -1,16 +1,9 @@
-# Except
+# EXCEPT
+Except is a Python tool that makes penetration testing easy, with Except you can run different modules such as the network scanner, md5 cracker and more to save time in the field. Except has been testing with Python 2.7 and is stable, for installation instructions please see the install section.
 
-Coded by At0m1cal
-Contact: At0m1calsof0war3@gmail.com
-------------------------------------
-requirements: Python 2.7
-------------------------------------
-Install.
+## installation
 
-git clone https://github.com/At0m1cal/Except.git
-
-cd except-master/
-
-pip install -r requirements.txt --no-index
-
-python except.py
+ 1. git clone https://github.com/At0m1cal/Except.git
+ 2. cd Except
+ 3. pip install -r requirements.txt
+ 4. python except.py
