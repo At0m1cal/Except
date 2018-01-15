@@ -45,7 +45,8 @@ while loop:
 	os.system('cls' if os.name == 'nt' else 'clear')
     elif choice=="1": 
 	if os.name=='nt':
-		subprocess.check_call(["modules/update.bat"]) 
+		os.chdir("modules")
+		os.system("update.bat") 
 		time.sleep(15)
 		subprocess.check_call(["python2.7", "modules/hashcracker.py"]) 
 	else:
