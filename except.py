@@ -48,7 +48,7 @@ while loop:
 		os.chdir("modules")
 		os.system("update.bat") 
 		time.sleep(15)
-		subprocess.check_call(["python2.7", "modules/hashcracker.py"]) 
+		subprocess.check_call(["python2.7", "hashcracker.py"]) 
 	else:
 		subprocess.check_call(["python2.7", "modules/hashcracker.py"]) 
     elif choice=="2": 
