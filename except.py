@@ -27,7 +27,7 @@ def menu():
     cprint('{:^80}'.format('\033[1m' + github +  '\033[0m'))
 
 
-    print(colored('\033[1m' + '1. Comming Soon.' +  '\033[0m', 'green'))
+    print(colored('\033[1m' + '1. Hash Cracker' +  '\033[0m', 'green'))
     print(colored('\033[1m' + '2. Comming Soon.' +  '\033[0m', 'green'))
     print(colored('\033[1m' + '3. Comming Soon.' +  '\033[0m', 'green'))
     print(colored('\033[1m' + '4. Comming Soon' +  '\033[0m', 'green'))
@@ -38,22 +38,25 @@ loop=True
 
 while loop:
     menu()
-    choice = input(colored('\033[1m' + 'Enter your choice [1-5]:' +  '\033[0m', 'green'))
+    choice = raw_input(colored('\033[1m' + 'Enter your choice [1-5]:' +  '\033[0m', 'green'))
 
-    if choice==1:
-	subprocess.check_call(["python2.7", "modules/md5.py"]) 
-    elif choice==2: 
-	subprocess.check_call(["python2.7", "modules/md5.py"]) 
-    elif choice==3:
-	subprocess.check_call(["python2.7", "modules/md5.py"]) 
-    elif choice==4:
-	subprocess.check_call(["python2.7", "modules/md5.py"]) 
-    elif choice==5:
-	print(colored('\033[1m' + 'Thank You For Usinig Except' +  '\033[0m', 'green'))
-	time.sleep(5)
-	quit()
-	loop=False
-    else:
+    if choice=="":
 	raw_input(colored('\033[1m' + 'Error wrong input selection. Press any key to try again!' +  '\033[0m', 'red'))
 	os.system('cls' if os.name == 'nt' else 'clear')
-
+    elif choice=="1": 
+	subprocess.check_call(["python2.7", "modules/md5.py"]) 
+    elif choice=="2": 
+	raw_input(colored('\033[1m' + 'Error Comming Soon!' +  '\033[0m', 'red'))
+    elif choice=="3":
+	raw_input(colored('\033[1m' + 'Error Comming Soon!' +  '\033[0m', 'red'))
+    elif choice=="4":
+	raw_input(colored('\033[1m' + 'Error Comming Soon!' +  '\033[0m', 'red'))
+    elif choice=="5":
+		print(colored('\033[1m' + 'Thank You For Usinig Except' +  '\033[0m', 'green'))
+		time.sleep(5)
+		os.system('cls' if os.name == 'nt' else 'clear')
+		quit()
+		loop=False
+    else:
+		raw_input(colored('\033[1m' + 'Error wrong input selection. Press any key to try again!' +  '\033[0m', 'red'))
+		os.system('cls' if os.name == 'nt' else 'clear')
