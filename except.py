@@ -49,7 +49,7 @@ while loop:
 		time.sleep(15)
 		subprocess.check_call(["python2.7", "modules/hashcracker.py"]) 
 	else:
-		pass
+		subprocess.check_call(["python2.7", "modules/hashcracker.py"]) 
     elif choice=="2": 
 	raw_input(colored('\033[1m' + 'Error Comming Soon!' +  '\033[0m', 'red'))
     elif choice=="3":
