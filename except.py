@@ -44,7 +44,7 @@ while loop:
 	raw_input(colored('\033[1m' + 'Error wrong input selection. Press any key to try again!' +  '\033[0m', 'red'))
 	os.system('cls' if os.name == 'nt' else 'clear')
     elif choice=="1": 
-	subprocess.check_call(["python2.7", "modules/md5.py"]) 
+	subprocess.check_call(["python2.7", "modules/hashcracker.py"]) 
     elif choice=="2": 
 	raw_input(colored('\033[1m' + 'Error Comming Soon!' +  '\033[0m', 'red'))
     elif choice=="3":
