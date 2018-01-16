@@ -14,7 +14,7 @@ Except is a Python tool that makes penetration testing easy, with Except you can
  3. Select the module you want to run.
  4. Have fun.
  
- !(https://preview.ibb.co/m2VxHR/Screenshot_from_2018_01_16_01_12_39.png)
+ ![alt text](https://preview.ibb.co/m2VxHR/Screenshot_from_2018_01_16_01_12_39.png)
  
 ## Contact
 
