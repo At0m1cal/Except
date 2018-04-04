@@ -4,18 +4,33 @@ import pip
 import subprocess
 import time
 
-from colorama import init
-init(strip=not sys.stdout.isatty())
-from termcolor import cprint
-from pyfiglet import figlet_format
-from termcolor import colored, cprint
+try:
+    from colorama import init
+    init(strip=not sys.stdout.isatty())
+    from termcolor import cprint
+    from pyfiglet import figlet_format
+    from termcolor import colored, cprint
+except:
+
+    print ("Installing Modules")
+
+    subprocess.call(["pip", 'install', "colorama==0.3.7"])
+    subprocess.call(["pip", 'install', "termcolor==1.1.0"])
+    subprocess.call(["pip", 'install', "pyfiglet==0.7.5"])
+
+    from colorama import init
+    init(strip=not sys.stdout.isatty())
+    from termcolor import cprint
+    from pyfiglet import figlet_format
+    from termcolor import colored, cprint
+
 
 def menu():
     os.system('cls' if os.name == 'nt' else 'clear')
 
     print ""
 
-    welcome = "EXCEPT"; 
+    welcome = "EXCEPT";
 
     cprint(figlet_format(welcome, font='banner3', justify="center"),
            'green', attrs=['bold'])
@@ -43,9 +58,12 @@ while loop:
     if choice=="":
 	raw_input(colored('\033[1m' + 'Error wrong input selection. Press any key to try again!' +  '\033[0m', 'red'))
 	os.system('cls' if os.name == 'nt' else 'clear')
-    elif choice=="1": 
-	subprocess.check_call(["python2.7", "modules/hashcracker.py"]) 
-    elif choice=="2": 
+    elif choice=="1":
+        try:
+	        subprocess.check_call(["python", "modules/hashcracker.py"])
+        except:
+            subprocess.check_call(["python2.7", "modules/hashcracker.py"])
+    elif choice=="2":
 	raw_input(colored('\033[1m' + 'Error Comming Soon!' +  '\033[0m', 'red'))
     elif choice=="3":
 	raw_input(colored('\033[1m' + 'Error Comming Soon!' +  '\033[0m', 'red'))
